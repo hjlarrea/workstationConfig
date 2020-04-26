@@ -1,0 +1,32 @@
+{
+
+	"ARM Template" : {
+		"prefix": "ARMTemplate",
+		"description": "ARM Template.",
+		"body": [
+			"{",
+				"\"$schema\": \"http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json#\",",
+				"\"contentVersion\": \"1.0.0.0\",",
+				"\"parameters\": {",
+				"},",
+				"\"variables\": {",
+				"},",
+				"\"resources\": [",
+				"],",
+				"\"outputs\": {}",
+			"}"
+		]
+	},
+	"ARM Parameters" : {
+		"prefix": "ARMParameters",
+		"description": "ARM Tempalte Parameters",
+		"body": [
+			"{",
+				"\"$schema\": \"http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#\",",
+				"\"contentVersion\":\"1.0.0.0\",",
+				"\"parameters\": {",
+				"}",
+			"}"
+		]
+	}
+}

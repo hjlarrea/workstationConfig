@@ -1,0 +1,31 @@
+{
+    "New PS Credentials" : {
+        "prefix": "PSCredentials",
+        "body": [
+            "$$userName='${1:username}'",
+            "$$secPasswd = ConvertTo-SecureString '${2:password}' -AsPlainText -Force",
+            "$$secCreds = New-Object System.Management.Automation.PSCredential ($$userName, $$secPasswd)",
+            "$0"
+        ],
+        "description": "Define a PS Credentials Object"
+    },
+
+    "Encode in Base64" : {
+        "prefix": "base64Encode",
+        "body" :[
+            "$$Bytes = [System.Text.Encoding]::Unicode.GetBytes(${1:stringToEncode})",
+            "$$EncodedText =[Convert]::ToBase64String($$Bytes)",
+            "$0"
+        ],
+        "description": "Encode string in Base64"
+
+    },
+    "Decode from Base64" : {
+        "prefix": "Base64Decode",
+        "body": [
+            "$$DecodedText = [System.Text.Encoding]::Unicode.GetString([System.Convert]::FromBase64String(${1:stringToDecode}))",
+            "$0"
+        ],
+        "description": "Decode string from Base64"
+    }
+}
