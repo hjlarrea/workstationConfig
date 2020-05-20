@@ -16,8 +16,10 @@
             "source": "Windows.Terminal.Wsl",
             "fontFace": "Fira Code",
             "startingDirectory": "/home/hjlarrea",
+            "backgroundImage": "https://github.com/hjlarrea/workstationConfig/blob/master/Terminal/img/ubuntu.jpg",
+            "backgroundImageOpacity": 0.5,
             "useAcrylic": true,
-            "acrylicOpacity": 0.5
+            "acrylicOpacity": 0.8
         },
         {
             // Make changes here to the powershell.exe profile
@@ -27,7 +29,7 @@
             "hidden": false,
             "fontFace": "Fira Code",
             "useAcrylic": true,
-            "acrylicOpacity": 0.5
+            "acrylicOpacity": 0.8
         },
         {
             // Make changes here to the cmd.exe profile
@@ -37,7 +39,7 @@
             "hidden": false,
             "fontFace": "Fira Code",
             "useAcrylic": true,
-            "acrylicOpacity": 0.5
+            "acrylicOpacity": 0.8
         },
         {
             "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
@@ -46,7 +48,7 @@
             "source": "Windows.Terminal.Azure",
             "fontFace": "Fira Code",
             "useAcrylic": true,
-            "acrylicOpacity": 0.5
+            "acrylicOpacity": 0.8
         }
     ],
 

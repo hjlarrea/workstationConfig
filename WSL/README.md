@@ -2,6 +2,13 @@
 
 The idea of this document is to collect all the configurations I use in WSL (Ubuntu 18.04).
 
+## Software to install
+
+- python3
+- python3-pip
+- azcli ([https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest#install](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest#install))
+- git
+
 ## Docker CLI
 
 Install requirements and configure docker cli to talk with the Docker for Desktop instance installed on Windows 10.
@@ -23,7 +30,7 @@ sudo adduser <your WSL user> docker
 
 From: [https://devblogs.microsoft.com/commandline/cross-post-wsl-interoperability-with-docker/](https://devblogs.microsoft.com/commandline/cross-post-wsl-interoperability-with-docker/)
 
-### Running docker-relay:
+### Note on running docker-relay:
 
 1. Start Docker for Windows
 1. Make sure `sudo` has your credential cached by running something like `sudo ls`. Otherwhise the next command won't work as it will start docker-relay as a job and if it would need to prompt for the user password the job would be paused.
@@ -55,4 +62,32 @@ cd ~
 alias python=python3
 alias pip=pip3
 alias kk=kubectl
+
+# Prompt
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[33m\]\$(parse_git_branch)\[\033[00m\]\$ "
+```
+
+## Create links
+
+Create the following links in the home directory:
+
+```bash
+cd ~
+ln -s /mnt/d/Git/ ./git
+# For the next one kubectl must be installed on Windows first
+ln -s /mnt/c/Users/hernan\ j.\ larrea/.kube/ ./.kube
+```
+
+## Set ~/.gitconfig file
+
+Set ~/.gitconfig file with the following content:
+
+```
+[user]
+        mail = hjlarrea@hotmail.com
+        name = Hernan J. Larrea
+        email = hjlarrea@hotmail.com
 ```
