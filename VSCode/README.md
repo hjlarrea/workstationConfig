@@ -2,7 +2,7 @@
 
 # Visual Studio Code configuration guide
 
-The idea of this repo is to collect all the configurations I use in VSCode. Probably, on a later stage, will automate the install and configuration. But for now the idea is to capture the whole setup.
+The idea of this document is to collect all the configurations I use in VSCode. Probably, on a later stage, will automate the install and configuration. But for now the idea is to capture the whole setup.
 
 ## Fonts
 
