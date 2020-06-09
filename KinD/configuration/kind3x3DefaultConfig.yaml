@@ -3,8 +3,59 @@ apiVersion: kind.x-k8s.io/v1alpha4
 networking:
 nodes:
 - role: control-plane
+  kubeadmConfigPatches:
+  - |
+    kind: InitConfiguration
+    nodeRegistration:
+      kubeletExtraArgs:
+        node-labels: "ingress-ready=true"
+        authorization-mode: "AlwaysAllow"
+  extraPortMappings:
+  - containerPort: 80
+    hostPort: 32001
+  - containerPort: 443
+    hostPort: 32011
 - role: control-plane
+  kubeadmConfigPatches:
+  - |
+    kind: InitConfiguration
+    nodeRegistration:
+      kubeletExtraArgs:
+        node-labels: "ingress-ready=true"
+        authorization-mode: "AlwaysAllow"
+  extraPortMappings:
+  - containerPort: 80
+    hostPort: 32002
+  - containerPort: 443
+    hostPort: 32012
 - role: control-plane
+  kubeadmConfigPatches:
+  - |
+    kind: InitConfiguration
+    nodeRegistration:
+      kubeletExtraArgs:
+        node-labels: "ingress-ready=true"
+        authorization-mode: "AlwaysAllow"
+  extraPortMappings:
+  - containerPort: 80
+    hostPort: 32003
+  - containerPort: 443
+    hostPort: 32013
 - role: worker
+  extraPortMappings:
+  - containerPort: 80
+    hostPort: 32004
+  - containerPort: 443
+    hostPort: 32014
 - role: worker
+  extraPortMappings:
+  - containerPort: 80
+    hostPort: 32005
+  - containerPort: 443
+    hostPort: 32015
 - role: worker
+  extraPortMappings:
+  - containerPort: 80
+    hostPort: 32006
+  - containerPort: 443
+    hostPort: 32016
