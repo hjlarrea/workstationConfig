@@ -46,6 +46,18 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s htt
 && sudo mv ./kubectl /usr/local/bin/kubectl
 ```
 
+## Install Helm
+
+```bash
+curl https://helm.baltorepo.com/organization/signing.asc | sudo apt-key add -
+sudo apt-get install apt-transport-https --yes
+echo "deb https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
+sudo apt-get update
+sudo apt-get install helm
+```
+
+From: [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/)
+
 ## Add to .bashrc
 
 Add the following configurations to the .bashrc file in the home directory:
