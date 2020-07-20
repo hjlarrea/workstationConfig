@@ -22,6 +22,6 @@ echo "Sleeping for 90 seconds..."
 sleep 90
 
 # Deploy the demo app
-kubectl apply -f ./ingressDemoApp.yaml
+#kubectl apply -f ./ingressDemoApp.yaml
 
-helm install kubernetes-dashboard/kubernetes-dashboard --namespace=dashboard dashboard
+helm install --namespace=kubernetes-dashboard --create-namespace --set=protocolHttp=true dashboard kubernetes-dashboard/kubernetes-dashboard 
