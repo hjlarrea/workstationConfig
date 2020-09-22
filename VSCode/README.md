@@ -23,6 +23,7 @@ The idea of this document is to collect all the configurations I use in VSCode. 
 | PowerShell | ms-vscode.powershell | PowerShell extension. |
 | Python | ms-python.python | Python extension. |
 | Remote Development | ms-vscode-remote.vscode-remote-extensionpack | WSL Configuration link: [here](https://code.visualstudio.com/docs/remote/wsl) |
+| Rainbow Brackets | 2gua.rainbow-brackets | Color nested brackets. |
 
 ## Snippets
 
