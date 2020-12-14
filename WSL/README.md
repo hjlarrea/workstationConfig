@@ -8,6 +8,7 @@ The idea of this document is to collect all the configurations I use in WSL (Ubu
 - python3-pip
 - azcli ([https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest#install](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest#install))
 - git
+- netcore ([https://docs.microsoft.com/en-us/dotnet/core/install/linux-ubuntu#1804-](https://docs.microsoft.com/en-us/dotnet/core/install/linux-ubuntu#1804-))
 
 ## Docker CLI
 
