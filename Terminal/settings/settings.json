@@ -5,18 +5,20 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
 
-    "defaultProfile": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+    "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
     "theme": "dark",
     "profiles":
     [
         {
-            "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+            "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
             "hidden": false,
-            "name": "Ubuntu-18.04",
+            "name": "Ubuntu",
             "source": "Windows.Terminal.Wsl",
             "fontFace": "Fira Code",
             "startingDirectory": "/home/hjlarrea",
-            "backgroundImage": "https://github.com/hjlarrea/workstationConfig/blob/master/Terminal/img/ubuntu.jpg",
+            "backgroundImage": "https://raw.githubusercontent.com/hjlarrea/workstationConfig/master/Terminal/img/ubuntu.png",
+            "backgroundImageAlignment": "bottomRight",
+            "backgroundImageStretchMode": "none",
             "backgroundImageOpacity": 0.5,
             "useAcrylic": true,
             "acrylicOpacity": 0.8
@@ -28,6 +30,10 @@
             "commandline": "powershell.exe",
             "hidden": false,
             "fontFace": "Fira Code",
+            "backgroundImage": "https://raw.githubusercontent.com/hjlarrea/workstationConfig/master/Terminal/img/powershell.png",
+            "backgroundImageAlignment": "bottomRight",
+            "backgroundImageStretchMode": "none",
+            "backgroundImageOpacity": 0.5,
             "useAcrylic": true,
             "acrylicOpacity": 0.8
         },
@@ -38,6 +44,9 @@
             "commandline": "cmd.exe",
             "hidden": false,
             "fontFace": "Fira Code",
+            "backgroundImage": "https://github.com/hjlarrea/workstationConfig/blob/master/Terminal/img/ubuntu.jpg",
+            "backgroundImageAlignment": "bottomRight",
+            "backgroundImageOpacity": 0.5,
             "useAcrylic": true,
             "acrylicOpacity": 0.8
         },
@@ -47,6 +56,9 @@
             "name": "Azure Cloud Shell",
             "source": "Windows.Terminal.Azure",
             "fontFace": "Fira Code",
+            "backgroundImage": "https://github.com/hjlarrea/workstationConfig/blob/master/Terminal/img/ubuntu.jpg",
+            "backgroundImageAlignment": "bottomRight",
+            "backgroundImageOpacity": 0.5,
             "useAcrylic": true,
             "acrylicOpacity": 0.8
         }
