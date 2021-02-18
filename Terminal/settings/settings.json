@@ -46,6 +46,7 @@
             "fontFace": "Fira Code",
             "backgroundImage": "https://raw.githubusercontent.com/hjlarrea/workstationConfig/master/Terminal/img/cmd.png",
             "backgroundImageAlignment": "bottomRight",
+            "backgroundImageStretchMode": "none",
             "backgroundImageOpacity": 0.5,
             "useAcrylic": true,
             "acrylicOpacity": 0.8
@@ -58,6 +59,7 @@
             "fontFace": "Fira Code",
             "backgroundImage": "https://raw.githubusercontent.com/hjlarrea/workstationConfig/master/Terminal/img/cloudShell.png",
             "backgroundImageAlignment": "bottomRight",
+            "backgroundImageStretchMode": "none",
             "backgroundImageOpacity": 0.5,
             "useAcrylic": true,
             "acrylicOpacity": 0.8
